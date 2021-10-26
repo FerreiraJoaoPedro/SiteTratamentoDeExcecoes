@@ -14,9 +14,9 @@
 	</div>
 
 	<div class="direita">
-		<a class="botao" href="index.html">Olha eu aq</a>
-		<a class="botao" href="index.html">Olha eu aq</a>
-		<a class="botao" href="index.html">Olha eu aq</a>
+		<a class="botao" href="#oquee">O que é?</a>
+		<a class="botao" href="#utilizacao">Utilização</a>
+		<a style="margin-right: 40px;" class="botao" href="#exemplo">Exemplo</a>
 	</div>
 </div>
 
@@ -29,7 +29,7 @@
 	</div>
 
 	<div class="secao">
-		<div class="shape">
+		<div class="shape" id="oquee">
 		<h4 class="tituloMini">O que é uma exceção?</h4>
 		</div>
 		<div class="corpoTexto">
@@ -54,11 +54,75 @@
 
 		<h5 class="texto">Pensando nisso foi criado o "Try Catch".</h5>
 
-		<h5 class="texto">O Try Catch é uma forma de tratamento de exceções, ou seja, ele é um bloco de código que nós colocamos em uma parte que possa gerar um evento problemático para que ele gere uma saída mais conveniente e menos destrutiva para a aplicação.</h5>
+		<h5 class="texto">O Try Catch é uma forma de tratamento de exceções, ou seja, ele é um bloco de código que nós colocamos em uma parte que possa culminar em um evento problemático para que ele gere uma saída mais conveniente e menos destrutiva para a aplicação.</h5>
 
-		<h5 class="texto">Agora que já sabemos que exceções são indesejadas, podemos pensar em uma forma de como combatê-las para deixar o programa mais fluido e estável.</h5>
+		<h5 class="texto">Já sabemos o que são exceções e que existe uma forma de preveni-las: o Try Catch. Sabendo disso, vamos conhecer a fundo esse comando e como utiliza-lo com sua total eficiência.</h5>
 		</div>
 	</div>
 
+	<div class="space"></div>
+
+	<div class="secao">
+		<div class="shape" id="utilizacao">
+		<h4 class="tituloMini">Como utilizá-lo?</h4>
+		</div>
+		<div class="corpoTexto">
+		<h5 class="texto">O Try Catch é basicamente dividido em duas partes: o try e o catch, com uma função cada uma.</h5>
+
+		<h5 class="texto">O "try", como o próprio nome é a parte do comando que vai tentar executar o código que pode gerar a exceção.</h5>
+
+		<h5 class="texto">O "catch" é a parte do comando que irá executar a medida para resolver a exceção, é dentro dele que escrevemos o que o programa deverá fazer no caso de uma exceção ocorrer.</h5>
+
+		<h5 class="texto">Vejamos agora um exemplo de como esse comando pode ser utilizado.</h5>
+		</div>
+	</div>
+
+	<div class="space"></div>
+
+	<div class="secao">
+		<div class="shape" id="exemplo">
+		<h4 class="tituloMini">Exemplo</h4>
+		</div>
+		<div class="corpoTexto">
+		<h5 class="texto">Nessa situação a seguir temos um programa simples em c# que calcula a divisão de dois valores.</h5>
+
+		<div class="cadeiaDeImagens">
+		<img class="imgs" src="tela.png">
+		<img class="imgs" src="resultado.png">
+		<img class="imgCodigo" src="codigo.png">
+		</div>
+
+		<div class="space"></div>
+
+		<h5 class="texto">Ao que parece ela funciona normalmente e dá sempre os valores que nós solicitamos. Porém, apesar de ela funcionar como queremos, esse código ainda pode gerar uma exceção!</h5>
+
+		<h5 class="texto">Suponhamos que ao inserir algum dos valores, sem querer digitemos uma letra ao inves de um número? Geraríamos uma exceção e acabaríamos com a excecução do programa no mesmo instante</h5>
+
+		<h5 class="texto">Abaixo um exemplo do que aconteceria:</h5>
+
+		<div class="cadeiaDeImagens">
+		<img class="imgs" src="telaExcecao.png">
+		<img class="imgCodigo" src="codigoExcecao.png">
+		</div>
+
+		<h5 class="texto">Sabendo da existência desse problema vamos utilizar o Try Catch para eliminá-lo.</h5>
+		<h5 class="texto">Vamos criar o comando de forma que a parte que o programa executará a divisão fique dentro do Try, e dentro do Catch o que fazer caso a exceção aconteça.</h5>
+		<h5 class="texto">O nosso código vai ficar mais ou menos parecido com isso:</h5>
+
+		<div class="cadeiaDeImagens">
+		<img id="imgCodigoEditado" src="codigoFinal.jpg">	
+		</div>
+
+		<h5 class="texto">Tendo feito isso, nosso Try Catch já está 100% funcional, e agora podemos testá-lo.</h5>
+		<h5 class="texto">Como no meu código eu escrevi para que o código exibisse "Não é possível dividir esse número", a saída esperada é que uma Message Box nos mostre essa mensagem quando eu forçar uma exceção.</h5>
+
+		<div class="cadeiaDeImagens">
+		<img class="imgs" src="telaExcecao.png">
+		<img class="imgs" src="resultadoFinal.png">	
+		</div>
+
+		</div>
+		</div>
+	</div>
 </body>
 </html>
