@@ -178,7 +178,12 @@ body{
 }
 
 .space{
-	height: 70px;
+	height: 100px;
+	background: #303030;
+}
+
+.space2{
+	height: 50px;
 	background: #303030;
 }
 
